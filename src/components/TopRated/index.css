@@ -1,0 +1,67 @@
+.movie-list-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 1200px) {
+  .movie-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c2c2c;
+  min-height: 80vh;
+}
+.route-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 0px;
+}
+@media screen and (max-width: 425px) {
+  .route-heading {
+    text-align: center;
+  }
+}
+.popular-container {
+  padding: 2em;
+}
+
+.loader-style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  background-color: #2c2c2c;
+}
+.page-numbers {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+@media screen and (max-width: 425px) {
+  .page-numbers {
+    text-align: center;
+  }
+}
+.next-page {
+  border-style: none;
+  background-color: #8b1c15;
+  color: #fff;
+  margin-left: 20px;
+}
+.loader-container {
+  height: 100vh;
+}

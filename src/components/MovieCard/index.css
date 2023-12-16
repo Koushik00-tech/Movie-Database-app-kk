@@ -1,0 +1,46 @@
+.poster-size {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  /* border: 1px solid #fff;
+  border-radius: 20px; */
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+}
+.movie:hover {
+  box-shadow: 3px 0px 15px 6px rgba(179, 177, 177, 0.1);
+}
+@media screen and (max-width: 1200px) {
+  .movie {
+    flex-grow: 1;
+  }
+}
+
+.view-details {
+  position: relative;
+  bottom: 0px;
+  align-self: stretch;
+  background-color: #8b1c15;
+  border: none;
+  height: 30px;
+  color: #fff;
+  border-radius: 10px;
+}
+@media screen and (max-width: 425px) {
+  .view-details {
+    align-self: center;
+  }
+}
+.view-details:hover {
+  background-color: yellow;
+  color: black;
+}
